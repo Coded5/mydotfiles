@@ -1,0 +1,129 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "AtkynsonMonoNerdFont";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+window.HDMI-A-2 * {
+    font-size: 12px;
+}
+
+.modules-center {
+    color: white;
+}
+
+.modules-right>widget {
+    color: white;
+    border-right: 1px solid rgba(14, 15, 26, 0.5);
+}
+
+.modules-right>widget:last-child {
+    border-right: none;
+}
+
+window#waybar {
+    /* background-color: rgba(108, 11, 117, 0.5); */
+    background-color: rgba(40, 42, 61, 0.5);
+}
+
+window#waybar.hidden {
+    opacity: 0;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* #clock, */
+/* #battery, */
+/* #cpu, */
+/* #memory, */
+/* #disk, */
+/* #temperature, */
+/* #backlight, */
+/* #network, */
+/* #pulseaudio, */
+/* #wireplumber, */
+/* #custom-media, */
+/* #tray, */
+/* #mode, */
+/* #idle_inhibitor, */
+/* #scratchpad, */
+/* #power-profiles-daemon, */
+/* #workspaces, */
+/* #mpd { */
+/*     border-radius: 100px; */
+/*     padding: 5px 15px; */
+/*     color: #ffffff; */
+/* } */
+
+#idle_inhibitor {
+    padding: 0 10px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+label.module,
+box.module {
+    margin: 5px 1rem;
+}
+
+#workspaces button {
+    color: white;
+}
+
+#workspaces button:hover {
+    color: grey;
+}
+
+#workspaces button.active {
+    color: #3ec254;
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+}

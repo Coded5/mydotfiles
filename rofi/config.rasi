@@ -1,0 +1,18 @@
+configuration {
+    display-drun: "Applications";
+    display-window: "Windows";
+    drun-display-format: "{icon} {name}";
+    show-icons: true;
+    font: "AtkynsonMono Nerd Font Mono Medium 15";
+    icon-theme: "Papirus";
+    modi: "window,drun";
+}
+//@theme "gruvbox-light"
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+
+element-icon {
+    size: 32px;
+}
