@@ -16,7 +16,8 @@
         // "mpd"
     ],
     "modules-right": [
-        "idle_inhibitor",
+        // "idle_inhibitor",
+        "hyprland/language",
         "pulseaudio",
         "network",
         "keyboard-state",
@@ -43,7 +44,7 @@
             "HDMI-A-3": [ 1, 2, 3 ],
             "HDMI-A-2": [ 4, 5, 6 ]
         },
-        "window-rewrite-default": "",
+        "window-rewrite-default": "",
         "window-rewrite": {
             "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
             "title<.*(i?)youtube.*>": "", // Windows whose titles contain "youtube"
@@ -53,7 +54,8 @@
             "code": "󰨞",
             "title<nvim.*>": "",
             "class<kitty>": "",
-            "class<spotify>": "󰓇"
+            "class<spotify>": "󰓇",
+            "class<steam>": ""
         }
     },
     "keyboard-state": {
@@ -65,23 +67,19 @@
             "unlocked": ""
         }
     },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+    "hyprland/language": {
+        "format": "󰌌 {}",
+        "keyboard-name": "spark-iyx-mu68-pro-cyan",
+        "format-en": "EN",
+        "format-th": "TH"
     },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
+    // "idle_inhibitor": {
+    //     "format": "{icon}",
+    //     "format-icons": {
+    //         "activated": "",
+    //         "deactivated": ""
+    //     }
+    // },
     "tray": {
         // "icon-size": 21,
         "spacing": 10,
@@ -111,14 +109,6 @@
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""]
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "power-profiles-daemon": {
         "format": "{icon}",
