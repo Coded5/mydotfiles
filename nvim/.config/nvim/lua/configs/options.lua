@@ -1,0 +1,17 @@
+vim.opt.cursorlineopt = "both"
+vim.opt.relativenumber = true
+vim.opt.number = true
+vim.opt.mouse = "a"
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.wrap = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.breakindent = true
+vim.opt.termguicolors = true
+vim.opt.encoding = "UTF-8"
+vim.opt.cursorline = true
+vim.opt.laststatus = 3
+vim.opt.signcolumn = "yes"
+vim.opt.conceallevel = 2

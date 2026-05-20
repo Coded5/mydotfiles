@@ -1,0 +1,5 @@
+vim.api.nvim_create_user_command("CleanJdtls", function()
+	vim.fn.delete(vim.fn.expand("~/.cache/jdtls"), "rf")
+	vim.fn.delete(vim.fn.expand("~/.jdtls-workspace"), "rf")
+	print("Deleted cache!")
+end, {})
