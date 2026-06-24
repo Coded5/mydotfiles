@@ -15,3 +15,6 @@ vim.opt.cursorline = true
 vim.opt.laststatus = 3
 vim.opt.signcolumn = "yes"
 vim.opt.conceallevel = 2
+
+vim.o.autoread = true
+vim.o.updatetime = 1000

@@ -52,20 +52,16 @@ map("n", "<leader>ft", "<CMD>NvimTreeFindFile<CR>", { desc = "Reveal file in Nvi
 -- 	map("n", "<leader>rn", vim.lsp.buf.rename, { buffer = bufnr, desc = "Rename" })
 -- 	map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { buffer = bufnr, desc = "Code action" })
 -- 	map("n", "gr", vim.lsp.buf.references, { buffer = bufnr, desc = "Reference" })
---
--- 	map("n", "<leader>d", vim.diagnostic.open_float, { buffer = bufnr, desc = "Show diagnostic" })
--- end
 
--- Harpoon
-
--- Copilot keymaps
-
--- map("n", "<leader>ci", "<cmd>Copilot panel<cr>", { desc = "Open Copilot panel" })
--- map("n", "<leader>cj", "<cmd>Copilot next<cr>", { desc = "Next Copilot suggestion" })
--- map("n", "<leader>ck", "<cmd>Copilot previous<cr>", { desc = "Previous Copilot suggestion" })
--- map("n", "<leader>cx", "<cmd>Copilot clear<cr>", { desc = "Clear Copilot suggestions" })
+map("n", "<leader>ca", vim.diagnostic.open_float, { desc = "Show diagnostic" })
 
 -- Obsidian
 
 map("n", "gf", "<cmd>Obsidian follow_link<cr>", { desc = "Enter link" })
 map("n", "gF", "<cmd>Obsidian backlinks<cr>", { desc = "Go back" })
+
+-- Snipe
+
+map("n", "<leader>s", function()
+	require("snipe").open_buffer_menu()
+end)

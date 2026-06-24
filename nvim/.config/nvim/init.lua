@@ -10,6 +10,7 @@ require("scripts.clean_jdtls")
 require("scripts.cd_config")
 
 require("autocmds.nvimtree_changedir")
+require("autocmds.buffer_refresh")
 
 -- Enable Treesitter highlighting for specific languages
 vim.api.nvim_create_autocmd("FileType", {
