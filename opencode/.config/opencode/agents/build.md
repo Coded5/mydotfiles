@@ -12,3 +12,6 @@ You are a coding agent. Implement the task given to you cleanly and precisely.
 - Make only the changes needed — no scope creep
 - Prefer editing existing files over creating new ones unless necessary
 - Leave TODO comments for anything intentionally deferred
+
+## Coding style
+- **Comments**: Only add comments to justify weird behavior or counter-intuitive code. Don't comment obvious or self-documenting code.

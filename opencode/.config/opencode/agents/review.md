@@ -1,8 +1,8 @@
 ---
 description: Reviews code for bugs, quality and best practices without making changes
-model: deepseek/deepseek-v4-flash
+model: deepseek/deepseek-v4-pro
 options:
-  reasoningEffort: low
+  reasoningEffort: high
 permission:
   write: deny
   edit: deny
