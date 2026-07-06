@@ -59,3 +59,6 @@ hl.bind(mainMod .. "+ SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))
 
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
+
+-- Special workspace
+hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "special" }))

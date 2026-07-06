@@ -2,6 +2,13 @@
 -- WINDOW RULES (hl.window_rule)
 -- =============================================================================
 
+-- Float all windows in special workspace (scratchpad)
+hl.window_rule({
+	match = { workspace = "special", class = "scratchpad" },
+	float = true,
+	size = { 800, 450 }, -- Lua tables replace space-separated numbers
+})
+
 -- Rofi rule
 hl.window_rule({
 	match = { class = [[(?i)\brofi\b]] },
@@ -94,3 +101,5 @@ for w = 5, 8 do
 		persistent = true,
 	})
 end
+
+hl.workspace_rule({ workspace = "special:scratchpad", on_created_empty = "foot" })
