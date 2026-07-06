@@ -16,5 +16,7 @@ vim.opt.laststatus = 3
 vim.opt.signcolumn = "yes"
 vim.opt.conceallevel = 2
 
+vim.opt.exrc = true
+
 vim.o.autoread = true
 vim.o.updatetime = 1000
