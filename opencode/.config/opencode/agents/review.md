@@ -1,6 +1,6 @@
 ---
 description: Reviews code for bugs, quality and best practices without making changes
-model: deepseek/deepseek-v4-pro
+model: openrouter/z-ai/glm-5.2
 options:
   reasoningEffort: high
 permission:
