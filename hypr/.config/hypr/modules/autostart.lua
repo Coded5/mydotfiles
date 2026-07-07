@@ -3,7 +3,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 
 	-- Session-managed applications and daemons
-	hl.exec_cmd("uwsm app -- otd-daemon")
+	-- hl.exec_cmd("uwsm app -- otd-daemon")
 	hl.exec_cmd("uwsm app -- nm-applet")
 	hl.exec_cmd("uwsm app -- waybar")
 	hl.exec_cmd("uwsm app -- hyprpaper")

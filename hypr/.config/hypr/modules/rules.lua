@@ -62,6 +62,13 @@ hl.window_rule({
 	rounding = 0,
 })
 
+hl.window_rule({
+	match = { class = "clipse" },
+	float = true,
+	focus_on_activate = true,
+	size = { "monitor_w*0.4", "monitor_h*0.4" },
+})
+
 -- =============================================================================
 -- LAYER RULES (hl.layer_rule)
 -- =============================================================================

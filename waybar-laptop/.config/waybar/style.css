@@ -1,0 +1,57 @@
+* {
+    font-family: "AtkynsonMonoNerdFont";
+    font-size: 15px;
+}
+
+window {
+    background: transparent;
+    color: whitesmoke;
+}
+
+window#waybar>box.horizontal {
+    margin: 5px;
+    background-color: rgba(30, 48, 64, 0.8);
+    border-radius: 4px;
+}
+
+.modules-right {
+    margin-right: 10px;
+}
+
+#custom-separator {
+    margin: 0 5px;
+}
+
+#cpu {
+    padding-left: 10px;
+}
+
+#cpu,
+#memory,
+#temperature {
+    margin-left: 10px;
+}
+
+#custom-spotify {
+    padding: 0 5px;
+}
+
+#language,
+#pulseaudio,
+#network,
+#tray {
+    padding: 0 5px;
+}
+
+#workspaces button:hover {
+    color: darkgray;
+}
+
+#workspaces button {
+    background: transparent;
+    border: none;
+}
+
+#workspaces button.active {
+    color: darkgray;
+}
