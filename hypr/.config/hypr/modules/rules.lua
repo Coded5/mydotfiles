@@ -103,3 +103,15 @@ for w = 5, 8 do
 end
 
 hl.workspace_rule({ workspace = "special:scratchpad", on_created_empty = "foot" })
+
+hl.window_rule({
+	name = "obsidian",
+	match = { class = "obsidian" },
+	workspace = "special:obsidian silent",
+})
+
+hl.window_rule({
+	name = "obsidian",
+	match = { class = "obsidian-nvim" },
+	workspace = "special:obsidian silent",
+})

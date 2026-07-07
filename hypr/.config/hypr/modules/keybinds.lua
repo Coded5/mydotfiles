@@ -61,4 +61,6 @@ hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
 -- Special workspace
-hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "special" }))
+-- hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "special" }))
+
+hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("obsidian"))
