@@ -11,11 +11,7 @@ return {
 			workspaces = {
 				{
 					name = "Idyll",
-					path = "~/Documents/Idyll/",
-				},
-				{
-					name = "Viewfinder",
-					path = "~/Documents/Viewfinder",
+					path = "~/Idyll/",
 				},
 			},
 			picker = {
