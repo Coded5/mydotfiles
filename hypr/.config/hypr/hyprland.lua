@@ -17,7 +17,6 @@ require("modules.autostart")
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
-hl.env("OBSIDIAN_REST_API_KEY", "728f4aa1e0e725a80722e23c952129708b142b1cb191b5c7abe3019eb860ec70")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("HYPRSHOT_DIR", "/home/kami/Pictures/Hyprshot")
@@ -176,16 +175,8 @@ hl.config({
 		sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
 	},
 })
----------------------
----- KEYBINDINGS ----
----------------------
 
 require("modules.keybinds")
-
----------------
----- RULES ----
----------------
-
 require("modules.rules")
-
 require("modules.laptop")
+require("modules.workspaces")
