@@ -1,7 +1,6 @@
 ------------------
 ---- MONITORS ----
 ------------------
-
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 require("modules.monitors")
 
@@ -9,7 +8,15 @@ require("modules.monitors")
 ---- AUTOSTART ----
 -------------------
 
-require("modules.autostart")
+hl.on("hyprland.start", function()
+	hl.exec_cmd("systemctl --user enable --now hypridle.service")
+	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("uwsm app -- waybar")
+	hl.exec_cmd("uwsm app -- hyprpaper")
+	hl.exec_cmd("uwsm app -- nm-applet")
+
+	require("modules.autostart")()
+end)
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
