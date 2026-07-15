@@ -1,6 +1,5 @@
 ---
 description: Plans features and breaks them into tasks before any code is written
-model: openrouter/deepseek/deepseek-v4-pro
 options:
   reasoningEffort: medium
 permission:

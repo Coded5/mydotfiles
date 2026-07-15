@@ -1,6 +1,5 @@
 ---
 description: Writes and edits code to implement features
-model: openrouter/deepseek/deepseek-v4-flash
 options:
   reasoningEffort: xhigh
 permission:
