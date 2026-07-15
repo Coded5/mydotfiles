@@ -9,7 +9,7 @@ require("modules.monitors")
 -------------------
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("systemctl --user enable --now hypridle")
+	hl.exec_cmd("systemctl --user start hypridle")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 	hl.exec_cmd("uwsm app -- waybar")
 	hl.exec_cmd("uwsm app -- hyprpaper")
