@@ -17,6 +17,7 @@
         "hyprland/language",
         "custom/separator",
         "pulseaudio",
+        "idle_inhibitor",
         "custom/separator",
         "battery",
         "custom/separator",
@@ -35,8 +36,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " ",
+            "deactivated": " "
         }
     },
 
