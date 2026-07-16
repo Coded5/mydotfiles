@@ -1,3 +1,9 @@
+hl.config({
+    xwayland = {
+        force_zero_scaling = true
+    }
+})
+
 hl.monitor({
 	output = "eDP-1",
 	mode = "2880x1800@90",
