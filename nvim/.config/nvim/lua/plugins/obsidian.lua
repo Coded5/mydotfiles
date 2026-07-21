@@ -30,39 +30,6 @@ return {
 				folder = "99 Templates",
 				date_format = "%Y-%m-%d",
 				time_format = "%H:%M",
-				substitutions = {
-					carryover = function()
-						local vault_path = tostring(Obsidian.dir)
-						local yesterday = os.date("%Y-%m-%d", os.time() - 86400)
-						local path = vault_path .. "/10 Daily/" .. yesterday .. ".md"
-
-						if vim.fn.filereadable(path) == 0 then
-							return "_(no previous daily note found)_"
-						end
-
-						local lines = vim.fn.readfile(path)
-						local capturing = false
-						local todos = {}
-
-						for _, line in ipairs(lines) do
-							if line:match("^##%s*Tomorrow") then
-								capturing = true
-							elseif line:match("^##%s") then
-								capturing = false
-							elseif capturing then
-								-- only pull unfinished checkboxes, skip already-checked ones
-								if line:match("^%s*%-%s*%[%s?%]") then
-									table.insert(todos, line)
-								end
-							end
-						end
-
-						if #todos == 0 then
-							return "_(nothing carried over)_"
-						end
-						return table.concat(todos, "\n")
-					end,
-				},
 			},
 			attachments = {
 				folder = "98 Attachments",
