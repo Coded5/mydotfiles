@@ -28,7 +28,11 @@
           "reasoning": true
         }
       }
-    }
+    },
+    // Detected openai authentication; opencode-quota added this global provider declaration.
+    "openai": {},
+    // Detected deepseek authentication; opencode-quota added this global provider declaration.
+    "deepseek": {}
   },
   "mcp": {
     "svelte": {
@@ -54,7 +58,8 @@
   },
   "plugin": [
     "./.opencode/plugins/ponytail.mjs",
-    "vimcode@git+https://github.com/oribarilan/vimcode.git#v0.15.3"
+    "@prevalentware/opencode-goal-plugin",
+    "@slkiser/opencode-quota"
   ],
   "instructions": [
     "README.md",
