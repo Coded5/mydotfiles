@@ -18,9 +18,6 @@ return {
 				},
 			},
 		},
-		config = function()
-			require("mason").setup()
-		end,
 	},
 	{
 		"mason-org/mason-lspconfig.nvim",
@@ -35,19 +32,22 @@ return {
 				"html",
 				"cssls",
 			},
+            automatic_enable = {
+                exclude = { "rust_analyzer", "jdtls" }
+            }
 		},
 		dependencies = {
 			{
 				"mason-org/mason.nvim",
-				opts = {
-					ui = {
-						icons = {
-							package_installed = "✓",
-							package_pending = "➜",
-							package_uninstalled = "✗",
-						},
-					},
-				},
+				-- opts = {
+				-- 	ui = {
+				-- 		icons = {
+				-- 			package_installed = "✓",
+				-- 			package_pending = "➜",
+				-- 			package_uninstalled = "✗",
+				-- 		},
+				-- 	},
+				-- },
 			},
 		},
 		config = function()
@@ -57,5 +57,17 @@ return {
 	},
 	{
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
+        opts = {
+			ensure_installed = {
+				"lua_ls",
+				"pyright",
+				"rust_analyzer",
+				"jdtls",
+				"eslint",
+				"ts_ls",
+				"html",
+				"cssls",
+			},
+        }
 	},
 }

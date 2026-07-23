@@ -1,7 +1,7 @@
 return {
 	{
-		"neovim-treesitter/nvim-treesitter",
-		dependencies = { "nvim-lua/plenary.nvim", "neovim-treesitter/treesitter-parser-registry" },
+		"nvim-treesitter/nvim-treesitter",
+		-- dependencies = { "nvim-lua/plenary.nvim", "neovim-treesitter/treesitter-parser-registry" },
 		build = ":TSUpdate",
 		lazy = false,
 		config = function()
@@ -22,7 +22,7 @@ return {
 				"tsx",
 				"rust",
 			}
-			require("nvim-treesitter").install(parsers)
+			require("nvim-treesitter").install(parsers):wait(300000)
 
 			vim.api.nvim_create_autocmd("FileType", {
 				callback = function(args)
