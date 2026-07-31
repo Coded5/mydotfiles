@@ -60,6 +60,11 @@ map("n", "<leader>ca", vim.diagnostic.open_float, { desc = "Show diagnostic" })
 map("n", "gf", "<cmd>Obsidian follow_link<cr>", { desc = "Enter link" })
 map("n", "gF", "<cmd>Obsidian backlinks<cr>", { desc = "Go back" })
 
+map("n", "<leader>ot", "<cmd>Obsidian today<cr>", { desc = "Today's daily note" })
+map("n", "<leader>oy", "<cmd>Obsidian yesterday<cr>", { desc = "Yesterday's daily note" })
+map("n", "<leader>oq", "<cmd>Obsidian new_from_template<cr>", { desc = "New note from template" })
+map("n", "<leader>on", "<cmd>Obsidian new<cr>", { desc = "New note" })
+
 -- Snipe
 
 map("n", "<leader>s", function()

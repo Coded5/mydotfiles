@@ -30,6 +30,7 @@ return {
 				folder = "99 Templates",
 				date_format = "%Y-%m-%d",
 				time_format = "%H:%M",
+				substitutions = {},
 			},
 			attachments = {
 				folder = "98 Attachments",
