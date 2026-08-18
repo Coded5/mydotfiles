@@ -17,9 +17,10 @@
         "hyprland/language",
         "custom/separator",
         "pulseaudio",
-        "idle_inhibitor",
+        "backlight",
         "custom/separator",
         "battery",
+        "idle_inhibitor",
         "custom/separator",
         "tray"
     ],
@@ -113,7 +114,18 @@
 
     "battery": {
         "interval": 1,
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% {icon} ",
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "events": {
+            "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+            "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+            "on-charging-100": "notify-send -u normal 'Battery Full!'",
+            "on-discharging": "notify-send -u normal 'Power Switch' Discharging",
+            "on-charging": "notify-send -u normal 'Power Switch' Charging"
+        },
         "format-icons": {
             "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
             "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
@@ -150,6 +162,13 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-"
     },
 
     "custom/media": {
