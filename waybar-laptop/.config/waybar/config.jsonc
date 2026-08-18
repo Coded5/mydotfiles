@@ -52,8 +52,7 @@
         "on-click": "activate",
         "sort-by-number": true,
         "persistent-wokrspaces": {
-            "DP-1": [ 1, 2, 3, 4 ],
-            "DP-2": [ 5, 6, 7, 8 ]
+            "eDP-1": [ 1, 2, 3, 4, 5, 6]
         },
         "window-rewrite-default": "",
         "window-rewrite": {
@@ -61,6 +60,7 @@
             "title<.*(i?)youtube.*>": "", // Windows whose titles contain "youtube"
             "class<firefox>": "", // Windows whose classes are "firefox"
             "class<.*(i?)nautilus.*>": "",
+            "class<zen>": "",
             "class<discord>": "",
             "code": "󰨞",
             "class<org.pwmt.zathura>": "󰈙",
@@ -70,7 +70,9 @@
             "class<steam>": "",
             "class<thunderbird>": "",
             "title<tmux>": "",
-            "class<factorio>": ""
+            "class<factorio>": "",
+            "class<md.obsidian.Obsidian>": "",
+            "class<Chatgpt>": "󰫢"
         }
     },
 
