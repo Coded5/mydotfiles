@@ -60,6 +60,7 @@
             "title<.*(i?)youtube.*>": "", // Windows whose titles contain "youtube"
             "class<firefox>": "", // Windows whose classes are "firefox"
             "class<.*(i?)nautilus.*>": "",
+            "class<zen>": "",
             "class<discord>": "",
             "code": "󰨞",
             "class<org.pwmt.zathura>": "󰈙",
@@ -70,7 +71,8 @@
             "class<thunderbird>": "",
             "title<tmux>": "",
             "class<factorio>": "",
-            "class<obsidian>": ""
+            "class<md.obsidian.Obsidian>": "",
+            "class<Chatgpt>": "󰫢"
         }
     },
 
@@ -172,5 +174,4 @@
         "on-click": "$HOME/.config/waybar/scripts/toggle_spotify.sh",
         "max-length": 40
     }
-
 }
