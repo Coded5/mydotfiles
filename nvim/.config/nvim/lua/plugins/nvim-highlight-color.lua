@@ -24,7 +24,7 @@ return {
 			enable_hsl_without_function = true,
 
 			---Highlight CSS variables, e.g. 'var(--testing-color)'
-			enable_var_usage = true,
+			enable_var_usage = false,
 
 			---Highlight named colors, e.g. 'green'
 			enable_named_colors = true,
