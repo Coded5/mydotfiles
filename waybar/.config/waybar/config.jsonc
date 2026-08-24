@@ -57,7 +57,7 @@
         "window-rewrite-default": "",
         "window-rewrite": {
             "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-            "title<.*(i?)youtube.*>": "", // Windows whose titles contain "youtube"
+            // "title<.*(i?)youtube.*>": "", // Windows whose titles contain "youtube"
             "class<firefox>": "", // Windows whose classes are "firefox"
             "class<.*(i?)nautilus.*>": "",
             "class<zen>": "",
@@ -71,7 +71,7 @@
             "class<thunderbird>": "",
             "title<tmux>": "",
             "class<factorio>": "",
-            "class<md.obsidian.Obsidian>": "",
+            "class<obsidian>": "",
             "class<Chatgpt>": "󰫢"
         }
     },
