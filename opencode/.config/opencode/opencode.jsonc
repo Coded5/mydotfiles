@@ -32,7 +32,9 @@
     // Detected openai authentication; opencode-quota added this global provider declaration.
     "openai": {},
     // Detected deepseek authentication; opencode-quota added this global provider declaration.
-    "deepseek": {}
+    "deepseek": {},
+    // Detected copilot authentication; opencode-quota added this global provider declaration.
+    "copilot": {}
   },
   "mcp": {
     "svelte": {
