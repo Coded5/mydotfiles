@@ -22,7 +22,8 @@ hl.bind(
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"), { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"), { locked = true, repeating = true })
 
-hl.bind("XF86Assistant", hl.dsp.workspace.toggle_special("magic"))
+-- X86Assistant
+hl.bind("code:201", hl.dsp.exec_cmd("pkill -SIGUSR1 -x waybar"), { ignore_mods = true, non_consuming = true })
 
 -- Requires playerctl
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
