@@ -34,3 +34,23 @@ hl.window_rule({
 	match = { class = "discord" },
 	workspace = "4",
 })
+
+
+local wallpapers = {
+    [1] = "~/.config/hypr/wallpapers/windmill.jpg",
+    [2] = "~/.config/hypr/wallpapers/nighthaven.png",
+    [3] = "~/.config/hypr/wallpapers/flowerlady.png",
+    [4] = "~/.config/hypr/wallpapers/windmill.jpg",
+    [5] = "~/.config/hypr/wallpapers/nighthaven.png",
+    [6] = "~/.config/hypr/wallpapers/flowerlady.png",
+}
+
+hl.on("workspace.active", function(ws)
+    local wp = wallpapers[ws.id]
+
+    if wp then
+        hl.exec_cmd(
+            "hyprctl hyprpaper wallpaper 'eDP-1, " .. wp .. ", cover'"
+        )
+    end
+end)
