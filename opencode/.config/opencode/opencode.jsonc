@@ -2,6 +2,7 @@
   "$schema": "https://opencode.ai/config.json",
   "model": "openai/gpt-5.6-sol",
   "small_model": "openrouter/deepseek/deepseek-v4-flash",
+"subagent_depth": 1,
   "provider": {
     "openrouter": {
       "options": {
@@ -55,6 +56,26 @@
       "url": "http://127.0.0.1:27123/mcp/",
       "headers": {
         "Authorization": "Bearer {env:OBSIDIAN_REST_API_KEY}"
+      }
+    }
+  },
+  "agent": {
+    "general": {
+      "model": "openai/gpt-5.6-luna",
+      "options": {
+        "reasoningEffort": "medium"
+      }
+    },
+    "explore": {
+      "model": "openai/gpt-5.6-luna",
+      "options": {
+        "reasoningEffort": "low"
+      }
+    },
+    "scout": {
+      "model": "openai/gpt-5.6-luna",
+      "options": {
+        "reasoningEffort": "low"
       }
     }
   },
