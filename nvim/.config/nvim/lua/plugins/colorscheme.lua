@@ -16,16 +16,15 @@ return {
 	{
 		"bluz71/vim-moonfly-colors",
 		name = "moonfly",
-		enabled = false,
 		lazy = false,
 		priority = 1000,
-		config = function()
-			require("moonfly").custom_colors({
-				grey11 = "#474747",
-			})
-			vim.g.moonflyTransparent = true
-			vim.g.moonflyVirtualTextColor = true
-			vim.cmd.colorscheme("moonfly")
+		_config = function()
+			-- require("moonfly").custom_colors({
+			-- 	grey11 = "#474747",
+			-- })
+			-- vim.g.moonflyTransparent = true
+			-- vim.g.moonflyVirtualTextColor = true
+			-- vim.cmd.colorscheme("moonfly")
 		end,
 	},
 	{
