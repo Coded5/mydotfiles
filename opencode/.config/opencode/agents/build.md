@@ -1,7 +1,8 @@
 ---
 description: Writes and edits code to implement features
+model: openai/gpt-6-sol
 options:
-  reasoningEffort: xhigh
+  reasoningEffort: low
 permission:
   edit: ask
 ---

@@ -1,5 +1,6 @@
 ---
 description: Plans features and breaks them into tasks before any code is written
+model: openai/gpt-6-sol
 options:
   reasoningEffort: medium
 permission:
