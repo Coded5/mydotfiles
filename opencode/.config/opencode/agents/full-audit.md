@@ -1,6 +1,6 @@
 ---
 description: Full production-readiness audit across security, architecture, infra, and scalability — expensive, use deliberately
-model: openai/gpt-6-sol
+model: openai/gpt-6.1-sol
 
 options:
   reasoningEffort: medium
