@@ -9,8 +9,17 @@ and attention settings migrated from `tui.jsonc`.
 packages publish server and terminal entrypoints. Restart OpenCode after
 changing plugin versions; runtime dependency artifacts are ignored.
 
-The `./.opencode/plugins/ponytail.mjs` entry is enabled. Its implementation was
-not found in this configuration directory, so its v2 compatibility is unverified.
+Ponytail is loaded from `@dietrichgebert/ponytail`.
+The OpenAI and Anthropic providers use the local proxy at `127.0.0.1:8787`.
+Build, plan, and full-audit use GPT-6.1 Sol; the default and focused review use
+GPT-6 Luna. The remote scribe removal is retained.
+Caveman MCP is enabled; Svelte and GitHub remain commented out locally.
+`plugins/caveman-native.js` is ported to v2 prompt, context, tool, compaction,
+and event hooks. Regenerating it with a v1 Caveman integration overwrites the
+port. The configured Caveman executable paths are machine-specific and were
+not present on this machine during migration; install Caveman or adjust them
+before relying on the integration. Prompt admission occurs before model
+resolution in v2, so its Caveman notification does not include model/provider.
 
 V2 ignores `server` in the main config. To restore the previous fixed port:
 

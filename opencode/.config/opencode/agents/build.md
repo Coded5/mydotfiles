@@ -1,8 +1,9 @@
 ---
 description: Writes and edits code to implement features
+model: openai/gpt-6.1-sol
 request:
   body:
-    reasoningEffort: xhigh
+    reasoningEffort: low
 permissions:
   - action: edit
     resource: "*"

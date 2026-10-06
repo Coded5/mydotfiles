@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "openai/gpt-6.1-sol",
+  "model": "openai/gpt-6-luna",
   "experimental": {
     "subagent_depth": 1
   },
@@ -14,9 +14,7 @@
         "z-ai/glm-5.2": {
           "body": {
             "provider": {
-              "order": [
-                "streamlake"
-              ],
+              "order": ["streamlake"],
               "allow_fallbacks": true
             }
           }
@@ -29,36 +27,42 @@
         }
       }
     },
-    // Detected openai authentication; opencode-quota added this global provider declaration.
-    "openai": {},
     // Detected deepseek authentication; opencode-quota added this global provider declaration.
     "deepseek": {},
     // Detected copilot authentication; opencode-quota added this global provider declaration.
-    "copilot": {}
+    "copilot": {},
+    "openai": {
+      "settings": {
+        "baseURL": "http://127.0.0.1:8787/w/opencode/openai/v1"
+      }
+    },
+    "anthropic": {
+      "settings": {
+        "baseURL": "http://127.0.0.1:8787/w/opencode/anthropic/v1"
+      }
+    }
   },
   "mcp": {
-    // "servers": {
-    //   "svelte": {
-    //     "type": "remote",
-    //     "url": "https://mcp.svelte.dev/mcp"
-    //   },
-    //   "github": {
-    //     "type": "remote",
-    //     "url": "https://api.githubcopilot.com/mcp/",
-    //     "disabled": false,
-    //     "oauth": false,
-    //     "headers": {
-    //       "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}"
-    //     }
-    //   },
-    //   "obsidian": {
-    //     "type": "remote",
-    //     "url": "http://127.0.0.1:27123/mcp/",
-    //     "headers": {
-    //       "Authorization": "Bearer {env:OBSIDIAN_REST_API_KEY}"
-    //     }
-    //   }
-    // }
+    "servers": {
+      //   "svelte": {
+      //     "type": "remote",
+      //     "url": "https://mcp.svelte.dev/mcp"
+      //   },
+      //   "github": {
+      //     "type": "remote",
+      //     "url": "https://api.githubcopilot.com/mcp/",
+      //     "disabled": false,
+      //     "oauth": false,
+      //     "headers": {
+      //       "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      //     }
+      //   },
+      "caveman": {
+        "type": "local",
+        "command": ["/home/kami/.caveman/bin/caveman-mcp"],
+        "disabled": false
+      }
+    }
   },
   "agents": {
     "title": {
@@ -88,8 +92,5 @@
     "@prevalentware/opencode-goal-plugin@0.1.55",
     "@slkiser/opencode-quota@5.0.1"
   ],
-  "instructions": [
-    "README.md",
-    "AGENTS.md"
-  ]
+  "instructions": ["README.md", "AGENTS.md"]
 }
