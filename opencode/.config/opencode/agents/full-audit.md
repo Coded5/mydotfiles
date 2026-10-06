@@ -369,16 +369,16 @@ Explain:
 Production Readiness Scorecard
 
 Category| Score /10| Notes
-Security| | 
-Backend Architecture| | 
-Frontend| | 
-Database| | 
-Infrastructure| | 
-Reliability| | 
-Scalability| | 
-Testing| | 
-Observability| | 
-AI Safety| | 
+Security| |
+Backend Architecture| |
+Frontend| |
+Database| |
+Infrastructure| |
+Reliability| |
+Scalability| |
+Testing| |
+Observability| |
+AI Safety| |
 
 ---
 
