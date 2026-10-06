@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "theme": {
+    "name": "ayu"
+  },
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "auto",
+    "scrollbar": false,
+    "thinking": "show"
+  },
+  "animations": true,
+  "keybinds": {
+    "leader": "ctrl+x",
+    "command.palette.show": "ctrl+p",
+    "agent.cycle": "tab",
+    "agent.cycle.reverse": "shift+tab"
+  },
+  "leader": { "timeout": 2000 },
+  "mouse": true,
+  "scroll": { "speed": 3, "acceleration": false },
+  "attention": {
+    "notifications": true,
+    "sound": true,
+    "volume": 0.4,
+    "sound_pack": "opencode.default"
+  },
+  "plugins": [
+    "@prevalentware/opencode-goal-plugin@0.1.55",
+    "@slkiser/opencode-quota@5.0.1"
+  ]
+}

@@ -1,11 +1,13 @@
 ---
 description: Reviews code for bugs, quality and best practices without making changes
-model: openai/gpt-5.6-sol
-options:
-  reasoningEffort: medium
-permission:
-  write: deny
-  edit: deny
+model: openai/gpt-6.1-sol
+request:
+  body:
+    reasoningEffort: medium
+permissions:
+  - action: edit
+    resource: "*"
+    effect: deny
 ---
 
 You are a Principal Engineer Review Board conducting a real-world production readiness audit.

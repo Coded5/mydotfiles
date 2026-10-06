@@ -1,0 +1,8 @@
+# Machine-local background service settings include a generated password.
+/service.json
+# Runtime plugin artifacts.
+/node_modules/
+/package.json
+/package-lock.json
+/bun.lock
+/bun.lockb

@@ -1,9 +1,12 @@
 ---
 description: Writes and edits code to implement features
-options:
-  reasoningEffort: xhigh
-permission:
-  edit: ask
+request:
+  body:
+    reasoningEffort: xhigh
+permissions:
+  - action: edit
+    resource: "*"
+    effect: ask
 ---
 You are a coding agent. Implement the task given to you cleanly and precisely.
 

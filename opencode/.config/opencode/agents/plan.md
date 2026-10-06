@@ -1,10 +1,12 @@
 ---
 description: Plans features and breaks them into tasks before any code is written
-options:
-  reasoningEffort: medium
-permission:
-  write: deny
-  edit: deny
+request:
+  body:
+    reasoningEffort: medium
+permissions:
+  - action: edit
+    resource: "*"
+    effect: deny
 ---
 You are a planning agent. Your job is to think through the feature or task before any code is written.
 

@@ -2,22 +2,21 @@
 description: Reads the current session and writes a summarized insight note to Obsidian
 mode: subagent
 model: deepseek/deepseek-v4-flash
-options:
-  reasoningEffort: low
-tools:
-  obsidian_vault_write: true
-  obsidian_vault_append: true
-  obsidian_vault_patch: true
-  obsidian_vault_get_document_map: true
-  obsidian_periodic_note_get_path: true
-  obsidian_active_file_get_path: true
-  write: false
-  edit: false
-  bash: false
-  webfetch: false
-permission:
-  obsidian_vault_delete: deny
-  obsdian_commadn_execute: ask
+request:
+  body:
+    reasoningEffort: low
+permissions:
+  - { action: obsidian_vault_write, resource: "*", effect: allow }
+  - { action: obsidian_vault_append, resource: "*", effect: allow }
+  - { action: obsidian_vault_patch, resource: "*", effect: allow }
+  - { action: obsidian_vault_get_document_map, resource: "*", effect: allow }
+  - { action: obsidian_periodic_note_get_path, resource: "*", effect: allow }
+  - { action: obsidian_active_file_get_path, resource: "*", effect: allow }
+  - { action: edit, resource: "*", effect: deny }
+  - { action: shell, resource: "*", effect: deny }
+  - { action: webfetch, resource: "*", effect: deny }
+  - { action: obsidian_vault_delete, resource: "*", effect: deny }
+  - { action: obsidian_command_execute, resource: "*", effect: ask }
 ---
 You are a scribe agent. Your job is to extract durable insight from a session and write it to Obsidian — not to log what was done.
 
