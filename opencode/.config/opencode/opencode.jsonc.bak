@@ -14,9 +14,7 @@
         "z-ai/glm-5.2": {
           "body": {
             "provider": {
-              "order": [
-                "streamlake"
-              ],
+              "order": ["streamlake"],
               "allow_fallbacks": true
             }
           }
@@ -29,7 +27,9 @@
         }
       }
     },
+    // Detected deepseek authentication; opencode-quota added this global provider declaration.
     "deepseek": {},
+    // Detected copilot authentication; opencode-quota added this global provider declaration.
     "copilot": {},
     "openai": {
       "settings": {
@@ -44,11 +44,23 @@
   },
   "mcp": {
     "servers": {
+      //   "svelte": {
+      //     "type": "remote",
+      //     "url": "https://mcp.svelte.dev/mcp"
+      //   },
+      //   "github": {
+      //     "type": "remote",
+      //     "url": "https://api.githubcopilot.com/mcp/",
+      //     "disabled": false,
+      //     "oauth": false,
+      //     "headers": {
+      //       "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      //     }
+      //   },
       "caveman": {
         "type": "local",
-        "command": [
-          "/home/kami/.caveman/bin/caveman-mcp"
-        ]
+        "command": ["/home/kami/.caveman/bin/caveman-mcp"],
+        "disabled": false
       }
     }
   },
@@ -59,36 +71,26 @@
     "general": {
       "model": "openai/gpt-6-luna",
       "request": {
-        "body": {
-          "reasoningEffort": "medium"
-        }
+        "body": { "reasoningEffort": "medium" }
       }
     },
     "explore": {
       "model": "openai/gpt-6-luna",
       "request": {
-        "body": {
-          "reasoningEffort": "low"
-        }
+        "body": { "reasoningEffort": "low" }
       }
     },
     "scout": {
       "model": "openai/gpt-6-luna",
       "request": {
-        "body": {
-          "reasoningEffort": "low"
-        }
+        "body": { "reasoningEffort": "low" }
       }
     }
   },
   "plugins": [
     "@dietrichgebert/ponytail",
     "@prevalentware/opencode-goal-plugin@0.1.55",
-    "@slkiser/opencode-quota@5.0.1",
-    "./plugins/caveman"
+    "@slkiser/opencode-quota@5.0.1"
   ],
-  "instructions": [
-    "README.md",
-    "AGENTS.md"
-  ]
+  "instructions": ["README.md", "AGENTS.md"]
 }

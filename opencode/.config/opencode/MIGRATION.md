@@ -13,13 +13,12 @@ Ponytail is loaded from `@dietrichgebert/ponytail`.
 The OpenAI and Anthropic providers use the local proxy at `127.0.0.1:8787`.
 Build, plan, and full-audit use GPT-6.1 Sol; the default and focused review use
 GPT-6 Luna. The remote scribe removal is retained.
-Caveman MCP is enabled; Svelte and GitHub remain commented out locally.
-`plugins/caveman-native.js` is ported to v2 prompt, context, tool, compaction,
-and event hooks. Regenerating it with a v1 Caveman integration overwrites the
-port. The configured Caveman executable paths are machine-specific and were
-not present on this machine during migration; install Caveman or adjust them
-before relying on the integration. Prompt admission occurs before model
-resolution in v2, so its Caveman notification does not include model/provider.
+Caveman mode tracking uses the local `plugins/caveman` v2 plugin. It parses
+mode commands and natural-language switches, stores mode per session, and
+injects the matching skill rules into context and compaction requests.
+It does not require the Caveman executable. The old native subprocess wrapper
+was removed. Caveman MCP is disabled because its configured executable is
+absent; install that executable before enabling Cloud tools again.
 
 V2 ignores `server` in the main config. To restore the previous fixed port:
 

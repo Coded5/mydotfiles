@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "integration": "opencode",
+  "entries": {
+    "plugins/caveman": {
+      "installedDigest": "96bbc7b69ff0df2375563b1d70b3562c6d2a8ccc264567a6f3e43cc487ad9541"
+    },
+    "commands/caveman.md": {
+      "installedDigest": "564b014345cf6aed9016f498571a106828ab29e5a1f66974f087fa8c0bf40690"
+    },
+    "commands/ultracave.md": {
+      "installedDigest": "f23a8f74f0ebc34f5ece86057259dfd9acce50717275da0c7dcae4f855c2c21c"
+    },
+    "commands/megacave.md": {
+      "installedDigest": "66d002d4916fbb3756bcbde85f8172ae21a0a5c20ae5e8202fd34b6f1e1270bd"
+    },
+    "commands/caveman-commit.md": {
+      "installedDigest": "6588ca84602e2df819521698f638c110734cabc1faa8c15b465f825a3114dac3"
+    },
+    "commands/caveman-review.md": {
+      "installedDigest": "4abeefc6d5577b10d76d0331153d3e8d76862ae3ef15f11d2280fbb2309f1ee4"
+    },
+    "commands/caveman-compress.md": {
+      "installedDigest": "b236a7e6976e06783b1f4cb60ba15ec4556ed16bb84f253b629ba02536897646"
+    },
+    "commands/caveman-stats.md": {
+      "installedDigest": "305d4c56dd4aa3250a5133ebb060ea02aa0eb93bc6923ed412718753dc8350f1"
+    },
+    "commands/caveman-help.md": {
+      "installedDigest": "f7b0293d39177fe216673bbeb81fde9f2df10aa7488203507161667c977161f8"
+    },
+    "agents/cavecrew-investigator.md": {
+      "installedDigest": "4f53e6c7e091c506217604c1ca2efca456f955e0e445c4390117fbe70882d62d"
+    },
+    "agents/cavecrew-builder.md": {
+      "installedDigest": "75382f2fb39a4fa0637ce3b63aab2adb9c52861317256dd869746d3984f6ea1f"
+    },
+    "agents/cavecrew-reviewer.md": {
+      "installedDigest": "daac6ed94360461d19e79154530503caf526b34316b361af0029213f14f3191b"
+    },
+    "skills/caveman": {
+      "installedDigest": "5ce92fe941deb07c363dc49813e4e269a22160b2db9a68e6c422968d6740c8bd"
+    },
+    "skills/ultracave": {
+      "installedDigest": "a91d00bd4ff3cee63eea55550c4f8c0253683b8c46b79b65076b68e72f62b71b"
+    },
+    "skills/megacave": {
+      "installedDigest": "a58099a29277e6eec2426835a341fe86a74f716d14cb2465013ca39e8a394954"
+    },
+    "skills/caveman-commit": {
+      "installedDigest": "e488a12b9c86a24142af4f9467e3cb416b2e70a700b831893a8f229d1d7afcb5"
+    },
+    "skills/caveman-review": {
+      "installedDigest": "19633b05c6be6b27c38f7a888e75d627a03e6563fdc05d38ed1162e375b0f287"
+    },
+    "skills/caveman-help": {
+      "installedDigest": "470b46aa3c45b663f1fa145e9de1d0d574356c0ff5d59e3380153eff47da45b1"
+    },
+    "skills/caveman-stats": {
+      "installedDigest": "efe8d4f6207132524221b53c0a23444768e39328b0382583504b6f673fd2956d"
+    },
+    "skills/caveman-compress": {
+      "installedDigest": "6042113627e6dcd7791a9e602ba675b1e27a6c982f91070c0ea2ff4c9ac24224"
+    },
+    "skills/cavecrew": {
+      "installedDigest": "cdf0cba87e5d0e7cfd7fc1564e82f42201dc125d362ddca7c4834da49cad75e8"
+    }
+  }
+}
