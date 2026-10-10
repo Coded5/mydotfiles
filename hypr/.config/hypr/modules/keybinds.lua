@@ -16,11 +16,11 @@ hl.bind(mainMod .. "+ SHIFT + K", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. "+ SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 -- Workspaces
-for i = 1, 10 do
-	local key = i % 10 -- 10 maps to key 0
-	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
-	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
-end
+-- for i = 1, 10 do
+-- 	local key = i % 10 -- 10 maps to key 0
+-- 	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+-- 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+-- end
 
 -- Close window
 hl.bind(mainMod .. "+ C", hl.dsp.window.close())
@@ -61,7 +61,6 @@ hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
 -- Special workspace
-hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "special" }))
+-- hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "special" }))
 
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("nautilus"))
-
+-- hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("nautilus"))
