@@ -1,6 +1,6 @@
 return {
 	"oflisback/obsidian-bridge.nvim",
-	-- enabled = false,
+	enabled = false,
 	opts = {
 		obsidian_server_address = "http://127.0.0.1:27123",
 	},
